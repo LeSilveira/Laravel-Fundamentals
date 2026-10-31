@@ -9,6 +9,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 #[Fillable(['meetup_group_id','title','slug','description','location','starts_at'])]
 class Event extends Model
 {
+
     public function meetupGroup(): BelongsTo
     {
         return $this->belongsTo(MeetupGroup::class);
