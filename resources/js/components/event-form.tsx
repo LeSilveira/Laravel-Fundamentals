@@ -9,6 +9,7 @@ type Props = {
     event?: Event;
 };
 
+
 export default function EventForm({ errors, meetupGroups, event }: Props) {
     return (
         <>

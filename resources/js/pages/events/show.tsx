@@ -1,17 +1,20 @@
-import { Head } from '@inertiajs/react';
-import { index, show } from '@/routes/events';
+import { Head, Link } from '@inertiajs/react';
+import { index, show, edit } from '@/routes/events';
 import type { Event } from '@/types';
 
 interface Props {
     event: Event;
+    canEditEvent: Boolean;
 }
 
-export default function EventShow({ event }: Props) {
+export default function EventShow({ event, canEditEvent}: Props) {
     return (
         <>
             <Head title={event.title} />
 
-            <div className="rounded-xl border border-sidebar-border/70 p-6 dark:border-sidebar-border">
+            {canEditEvent && (<Link href={edit.url(event)}>Edit</Link>)}
+
+            <div className="mt-4 rounded-xl border border-sidebar-border/70 p-6 dark:border-sidebar-border">
                 <h1 className="text-2xl font-semibold">{event.title}</h1>
 
                 {event.meetup_group && (
