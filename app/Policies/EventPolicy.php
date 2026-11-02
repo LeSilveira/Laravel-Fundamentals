@@ -13,3 +13,4 @@ class EventPolicy
         return $user->id === $event->meetupGroup->user_id;
     }
 }
+ 
