@@ -1,7 +1,7 @@
 import { queryParams, type RouteQueryOptions, type RouteDefinition, type RouteFormDefinition, applyUrlDefaults } from './../../../wayfinder'
 /**
 * @see \App\Http\Controllers\RsvpController::store
- * @see app/Http/Controllers/RsvpController.php:12
+ * @see app/Http/Controllers/RsvpController.php:13
  * @route '/events/{event}/rsvp'
  */
 export const store = (args: { event: string | { slug: string } } | [event: string | { slug: string } ] | string | { slug: string }, options?: RouteQueryOptions): RouteDefinition<'post'> => ({
@@ -16,7 +16,7 @@ store.definition = {
 
 /**
 * @see \App\Http\Controllers\RsvpController::store
- * @see app/Http/Controllers/RsvpController.php:12
+ * @see app/Http/Controllers/RsvpController.php:13
  * @route '/events/{event}/rsvp'
  */
 store.url = (args: { event: string | { slug: string } } | [event: string | { slug: string } ] | string | { slug: string }, options?: RouteQueryOptions) => {
@@ -49,7 +49,7 @@ store.url = (args: { event: string | { slug: string } } | [event: string | { slu
 
 /**
 * @see \App\Http\Controllers\RsvpController::store
- * @see app/Http/Controllers/RsvpController.php:12
+ * @see app/Http/Controllers/RsvpController.php:13
  * @route '/events/{event}/rsvp'
  */
 store.post = (args: { event: string | { slug: string } } | [event: string | { slug: string } ] | string | { slug: string }, options?: RouteQueryOptions): RouteDefinition<'post'> => ({
@@ -59,7 +59,7 @@ store.post = (args: { event: string | { slug: string } } | [event: string | { sl
 
     /**
 * @see \App\Http\Controllers\RsvpController::store
- * @see app/Http/Controllers/RsvpController.php:12
+ * @see app/Http/Controllers/RsvpController.php:13
  * @route '/events/{event}/rsvp'
  */
     const storeForm = (args: { event: string | { slug: string } } | [event: string | { slug: string } ] | string | { slug: string }, options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
@@ -69,7 +69,7 @@ store.post = (args: { event: string | { slug: string } } | [event: string | { sl
 
             /**
 * @see \App\Http\Controllers\RsvpController::store
- * @see app/Http/Controllers/RsvpController.php:12
+ * @see app/Http/Controllers/RsvpController.php:13
  * @route '/events/{event}/rsvp'
  */
         storeForm.post = (args: { event: string | { slug: string } } | [event: string | { slug: string } ] | string | { slug: string }, options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
@@ -80,7 +80,7 @@ store.post = (args: { event: string | { slug: string } } | [event: string | { sl
     store.form = storeForm
 /**
 * @see \App\Http\Controllers\RsvpController::deleteMethod
- * @see app/Http/Controllers/RsvpController.php:18
+ * @see app/Http/Controllers/RsvpController.php:20
  * @route '/events/{event}/rsvp'
  */
 export const deleteMethod = (args: { event: string | { slug: string } } | [event: string | { slug: string } ] | string | { slug: string }, options?: RouteQueryOptions): RouteDefinition<'delete'> => ({
@@ -95,7 +95,7 @@ deleteMethod.definition = {
 
 /**
 * @see \App\Http\Controllers\RsvpController::deleteMethod
- * @see app/Http/Controllers/RsvpController.php:18
+ * @see app/Http/Controllers/RsvpController.php:20
  * @route '/events/{event}/rsvp'
  */
 deleteMethod.url = (args: { event: string | { slug: string } } | [event: string | { slug: string } ] | string | { slug: string }, options?: RouteQueryOptions) => {
@@ -128,7 +128,7 @@ deleteMethod.url = (args: { event: string | { slug: string } } | [event: string 
 
 /**
 * @see \App\Http\Controllers\RsvpController::deleteMethod
- * @see app/Http/Controllers/RsvpController.php:18
+ * @see app/Http/Controllers/RsvpController.php:20
  * @route '/events/{event}/rsvp'
  */
 deleteMethod.delete = (args: { event: string | { slug: string } } | [event: string | { slug: string } ] | string | { slug: string }, options?: RouteQueryOptions): RouteDefinition<'delete'> => ({
@@ -138,7 +138,7 @@ deleteMethod.delete = (args: { event: string | { slug: string } } | [event: stri
 
     /**
 * @see \App\Http\Controllers\RsvpController::deleteMethod
- * @see app/Http/Controllers/RsvpController.php:18
+ * @see app/Http/Controllers/RsvpController.php:20
  * @route '/events/{event}/rsvp'
  */
     const deleteMethodForm = (args: { event: string | { slug: string } } | [event: string | { slug: string } ] | string | { slug: string }, options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
@@ -153,7 +153,7 @@ deleteMethod.delete = (args: { event: string | { slug: string } } | [event: stri
 
             /**
 * @see \App\Http\Controllers\RsvpController::deleteMethod
- * @see app/Http/Controllers/RsvpController.php:18
+ * @see app/Http/Controllers/RsvpController.php:20
  * @route '/events/{event}/rsvp'
  */
         deleteMethodForm.delete = (args: { event: string | { slug: string } } | [event: string | { slug: string } ] | string | { slug: string }, options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({

@@ -9,9 +9,15 @@ Project developed to practice basic features of the Laravel framework, using Rea
   - Node (26.13.0)
 
 ## How to Run
+### Project
 - From the project's root:
 ```bat
    php artisan key:generate
    composer install
    composer run dev
+```
+### Queue worker (for email notifications triggered by rsvp confirmation)
+- From the project's root:
+```bat
+   php artisan queue:work
 ```
